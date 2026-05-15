@@ -6,12 +6,10 @@
 <title>Luxe&Co · Detailed Gallery</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'Inter',-apple-system,sans-serif;background:#0a0a0a;color:#f5f1ea;line-height:1.6;overflow-x:hidden}
-h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:-.02em}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
 nav{position:fixed;top:0;left:0;right:0;padding:16px 30px;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,10,.85);backdrop-filter:blur(20px);z-index:1000;border-bottom:1px solid rgba(212,175,55,.15)}
 .logo{font-family:'Playfair Display',serif;font-size:24px;font-weight:900;letter-spacing:2px;background:linear-gradient(135deg,#d4af37,#f5e1a8 50%,#d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .nav-links{display:flex;gap:24px}
@@ -61,8 +59,7 @@ nav{position:fixed;top:0;left:0;right:0;padding:16px 30px;display:flex;justify-c
 .lightbox-close{position:absolute;top:24px;right:28px;width:44px;height:44px;border-radius:50%;background:rgba(212,175,55,.2);color:#f5e1a8;border:1px solid rgba(212,175,55,.4);font-size:24px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 footer{padding:50px 20px 40px;text-align:center;border-top:1px solid rgba(212,175,55,.15);margin-top:50px}
-footer .logo{margin-bottom:12px}
-footer p{font-size:13px;opacity:.5}
+footer .logo{margin-bottom:12px}footer p{font-size:13px;opacity:.5}
 @media(max-width:900px){
 .lightbox-inner{flex-direction:column;gap:16px;overflow-y:auto;max-height:95vh}
 .lightbox-img-wrap{max-width:92vw;max-height:50vh}
@@ -88,318 +85,33 @@ nav{padding:12px 16px}.nav-links{display:none}}
 <h1>Curated <span class="gold">Designer Pieces</span></h1>
 <p>30 hand-selected luxury bags · 3 price tiers · UK warehouse direct</p>
 <div class="tier-nav">
-<a href="#tier-198">€198 Series</a>
-<a href="#tier-268">€268 Series</a>
-<a href="#tier-298">€298 Series</a>
+<a href="#tier-198">€198 Series</a><a href="#tier-268">€268 Series</a><a href="#tier-298">€298 Series</a>
 </div>
 </section>
-<section class="tier" id="tier-198">
-<div class="tier-head"><div class="label">Tier 01 · Louis Vuitton</div><h2>From <span class="gold">€198</span></h2><div class="sub">10 styles · Brown & Monogram Series</div></div>
-<div class="gallery-grid" id="grid-198"></div>
-</section>
-<section class="tier" id="tier-268">
-<div class="tier-head"><div class="label">Tier 02 · Chanel</div><h2>From <span class="gold">€268</span></h2><div class="sub">10 styles · Iconic Black Series</div></div>
-<div class="gallery-grid" id="grid-268"></div>
-</section>
-<section class="tier" id="tier-298">
-<div class="tier-head"><div class="label">Tier 03 · Dior</div><h2>From <span class="gold">€298</span></h2><div class="sub">10 styles · Premium Series</div></div>
-<div class="gallery-grid" id="grid-298"></div>
-</section>
+<section class="tier" id="tier-198"><div class="tier-head"><div class="label">Tier 01 · Louis Vuitton</div><h2>From <span class="gold">€198</span></h2><div class="sub">10 styles · Brown & Monogram</div></div><div class="gallery-grid" id="grid-198"></div></section>
+<section class="tier" id="tier-268"><div class="tier-head"><div class="label">Tier 02 · Chanel</div><h2>From <span class="gold">€268</span></h2><div class="sub">10 styles · Iconic Black</div></div><div class="gallery-grid" id="grid-268"></div></section>
+<section class="tier" id="tier-298"><div class="tier-head"><div class="label">Tier 03 · Dior</div><h2>From <span class="gold">€298</span></h2><div class="sub">10 styles · Premium Series</div></div><div class="gallery-grid" id="grid-298"></div></section>
 <div class="lightbox" id="lightbox">
 <button class="lightbox-close" id="lightboxClose">×</button>
 <div class="lightbox-inner">
 <div class="lightbox-img-wrap" id="lightboxImgWrap"><img id="lightboxImg" src="" alt=""></div>
 <div class="lightbox-info">
-<div class="lb-brand" id="lbBrand"></div>
-<div class="lb-model" id="lbModel"></div>
+<div class="lb-brand" id="lbBrand"></div><div class="lb-model" id="lbModel"></div>
 <div class="lb-price-row"><div class="lb-price" id="lbPrice"></div><div class="lb-retail" id="lbRetail"></div></div>
 <div class="lb-save" id="lbSave"></div>
 <p class="lb-desc">Same craftsmanship, same iconic silhouette — at a fraction of the boutique price. Shipped from our UK warehouse in 3-5 business days.</p>
 <ul class="lb-features"><li>UK Local Warehouse · 3-5 Day Delivery</li><li>Discreet Packaging · Tracked Shipping</li><li>First-time buyer 10% off</li></ul>
 <a class="lb-cta" id="lbCta" href="#" target="_blank" rel="noopener">More Details →</a>
-</div>
-</div>
-</div>
+</div></div></div>
 <footer><div class="logo">LUXE&CO</div><p>Designer luxury bags · UK local warehouse · 3-5 day delivery</p></footer>
 <script>
-const PRODUCTS = [
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "01",
-    "brand": "Louis Vuitton",
-    "model": "allinbb 水桶包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646920"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "02",
-    "brand": "Louis Vuitton",
-    "model": "法棍包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646916"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "03",
-    "brand": "Louis Vuitton",
-    "model": "L 牛角包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646765"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "04",
-    "brand": "Louis Vuitton",
-    "model": "NF 购物袋",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646631"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "05",
-    "brand": "Louis Vuitton",
-    "model": "薯条包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646919"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "06",
-    "brand": "Louis Vuitton",
-    "model": "Speedy 枕头",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646770"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "07",
-    "brand": "Louis Vuitton",
-    "model": "邮差包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646663"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "08",
-    "brand": "Louis Vuitton",
-    "model": "法棍包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646916"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "09",
-    "brand": "Louis Vuitton",
-    "model": "贝壳包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646629"
-  },
-  {
-    "price": 198,
-    "retail": 1500,
-    "tier": 198,
-    "num": "10",
-    "brand": "Louis Vuitton",
-    "model": "发财桶",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646917"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "01",
-    "brand": "Chanel",
-    "model": "Duma 双肩包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646698"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "02",
-    "brand": "Chanel",
-    "model": "22Bag 迷你",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646713"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "03",
-    "brand": "Chanel",
-    "model": "正品皮 香奈儿热门",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646792"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "04",
-    "brand": "Chanel",
-    "model": "2.55 系列",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646827"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "05",
-    "brand": "Chanel",
-    "model": "Le Boy 合集",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646664"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "06",
-    "brand": "Chanel",
-    "model": "双金球 合集",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646828"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "07",
-    "brand": "Chanel",
-    "model": "小盒子包合集",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646646"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "08",
-    "brand": "Chanel",
-    "model": "方胖子小金球",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646667"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "09",
-    "brand": "Chanel",
-    "model": "流浪包 全品",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646824"
-  },
-  {
-    "price": 268,
-    "retail": 4500,
-    "tier": 268,
-    "num": "10",
-    "brand": "Chanel",
-    "model": "邮差包合集",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646731"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "01",
-    "brand": "Dior",
-    "model": "蒙田包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646775"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "02",
-    "brand": "Dior",
-    "model": "Toujours 系列",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646726"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "03",
-    "brand": "Dior",
-    "model": "CD 双肩包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646628"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "04",
-    "brand": "Dior",
-    "model": "横版戴妃",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646940"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "05",
-    "brand": "Dior",
-    "model": "月亮",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646724"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "06",
-    "brand": "Dior",
-    "model": "戴妃 · 正品渠道货",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646863"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "07",
-    "brand": "Dior",
-    "model": "戴妃饭盒包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646747"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "08",
-    "brand": "Dior",
-    "model": "新托特 · 正品",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646880"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "09",
-    "brand": "Dior",
-    "model": "CD 邮差包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646645"
-  },
-  {
-    "price": 298,
-    "retail": 3800,
-    "tier": 298,
-    "num": "10",
-    "brand": "Dior",
-    "model": "马鞍包",
-    "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646692"
-  }
-];
+const PRODUCTS = [{"price": 198, "retail": 1500, "tier": 198, "num": "01", "brand": "Louis Vuitton", "model": "allinbb 水桶包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646920"}, {"price": 198, "retail": 1500, "tier": 198, "num": "02", "brand": "Louis Vuitton", "model": "法棍包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646916"}, {"price": 198, "retail": 1500, "tier": 198, "num": "03", "brand": "Louis Vuitton", "model": "L 牛角包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646765"}, {"price": 198, "retail": 1500, "tier": 198, "num": "04", "brand": "Louis Vuitton", "model": "NF 购物袋", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646631"}, {"price": 198, "retail": 1500, "tier": 198, "num": "05", "brand": "Louis Vuitton", "model": "薯条包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646919"}, {"price": 198, "retail": 1500, "tier": 198, "num": "06", "brand": "Louis Vuitton", "model": "Speedy 枕头", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646770"}, {"price": 198, "retail": 1500, "tier": 198, "num": "07", "brand": "Louis Vuitton", "model": "邮差包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646663"}, {"price": 198, "retail": 1500, "tier": 198, "num": "08", "brand": "Louis Vuitton", "model": "法棍包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646916"}, {"price": 198, "retail": 1500, "tier": 198, "num": "09", "brand": "Louis Vuitton", "model": "贝壳包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646629"}, {"price": 198, "retail": 1500, "tier": 198, "num": "10", "brand": "Louis Vuitton", "model": "发财桶", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646917"}, {"price": 268, "retail": 4500, "tier": 268, "num": "01", "brand": "Chanel", "model": "Duma 双肩包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646698"}, {"price": 268, "retail": 4500, "tier": 268, "num": "02", "brand": "Chanel", "model": "22Bag 迷你", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646713"}, {"price": 268, "retail": 4500, "tier": 268, "num": "03", "brand": "Chanel", "model": "正品皮 香奈儿", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646792"}, {"price": 268, "retail": 4500, "tier": 268, "num": "04", "brand": "Chanel", "model": "2.55 系列", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646827"}, {"price": 268, "retail": 4500, "tier": 268, "num": "05", "brand": "Chanel", "model": "Le Boy 合集", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646664"}, {"price": 268, "retail": 4500, "tier": 268, "num": "06", "brand": "Chanel", "model": "双金球 合集", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646828"}, {"price": 268, "retail": 4500, "tier": 268, "num": "07", "brand": "Chanel", "model": "小盒子包合集", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646646"}, {"price": 268, "retail": 4500, "tier": 268, "num": "08", "brand": "Chanel", "model": "方胖子小金球", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646667"}, {"price": 268, "retail": 4500, "tier": 268, "num": "09", "brand": "Chanel", "model": "流浪包 全品", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646824"}, {"price": 268, "retail": 4500, "tier": 268, "num": "10", "brand": "Chanel", "model": "邮差包合集", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646731"}, {"price": 298, "retail": 3800, "tier": 298, "num": "01", "brand": "Dior", "model": "蒙田包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646775"}, {"price": 298, "retail": 3800, "tier": 298, "num": "02", "brand": "Dior", "model": "Toujours 系列", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646726"}, {"price": 298, "retail": 3800, "tier": 298, "num": "03", "brand": "Dior", "model": "CD 双肩包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646628"}, {"price": 298, "retail": 3800, "tier": 298, "num": "04", "brand": "Dior", "model": "横版戴妃", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646940"}, {"price": 298, "retail": 3800, "tier": 298, "num": "05", "brand": "Dior", "model": "月亮", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646724"}, {"price": 298, "retail": 3800, "tier": 298, "num": "06", "brand": "Dior", "model": "戴妃 · 正品渠道货", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646863"}, {"price": 298, "retail": 3800, "tier": 298, "num": "07", "brand": "Dior", "model": "戴妃饭盒包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646747"}, {"price": 298, "retail": 3800, "tier": 298, "num": "08", "brand": "Dior", "model": "新托特 · 正品", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646880"}, {"price": 298, "retail": 3800, "tier": 298, "num": "09", "brand": "Dior", "model": "CD 邮差包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646645"}, {"price": 298, "retail": 3800, "tier": 298, "num": "10", "brand": "Dior", "model": "马鞍包", "shopUrl": "https://a202004261251495200361080.wgstores.com/weshop/goods_list/_dLMqfLn9A_bNpTTHmqnMky7RuyiRPN3Ce3NHB0A?tagId=98646692"}];
 const SHOP_HOME = "https://shop36108042.wgstores.com";
-
+const IMG_BASE = "https://cdn.jsdelivr.net/gh/V-china/baobao-@main/ad/gallery/";
 for (const tier of [198,268,298]){
   const grid = document.getElementById(`grid-${tier}`);
   PRODUCTS.filter(p=>p.tier===tier).forEach(p=>{
-    const url = `gallery/${tier}/${p.num}.png`;
+    const url = `${IMG_BASE}${tier}/${p.num}.png`;
     const card = document.createElement('div');
     card.className = 'gallery-card';
     card.innerHTML = `<img src="${url}" alt="${p.brand} ${p.model}" loading="lazy"><div class="gc-tag">${p.brand}<span class="price">€${p.price} · ${p.model}</span></div>`;
@@ -407,7 +119,6 @@ for (const tier of [198,268,298]){
     grid.appendChild(card);
   });
 }
-
 const lightbox = document.getElementById('lightbox');
 function openLightbox(item){
   document.getElementById('lightboxImg').src = item.url;
@@ -418,8 +129,7 @@ function openLightbox(item){
   const pct = Math.round((1 - item.price/item.retail)*100);
   document.getElementById('lbSave').textContent = `YOU SAVE ${pct}% · €${(item.retail-item.price).toLocaleString()}`;
   document.getElementById('lbCta').href = item.shopUrl || SHOP_HOME;
-  lightbox.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  lightbox.classList.add('active');document.body.style.overflow = 'hidden';
 }
 function closeLightbox(){lightbox.classList.remove('active');document.body.style.overflow=''}
 document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
